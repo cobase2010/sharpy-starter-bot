@@ -280,6 +280,7 @@ class ProtossBot(KnowledgeBot):
             ),
             Step(
                 UnitReady(UnitTypeId.GATEWAY, 1),
+                # ChronoUnit(UnitTypeId.ZEALOT, UnitTypeId.GATEWAY),
                 ProtossUnit(UnitTypeId.ZEALOT, 1),
                 TechReady(UpgradeId.WARPGATERESEARCH, 1),
             ),
@@ -301,6 +302,13 @@ class ProtossBot(KnowledgeBot):
                 skip=UnitExists(UnitTypeId.PROBE, 20, include_killed=True),
                 skip_until=UnitReady(UnitTypeId.PYLON),
             ),
+            Step(
+                None,
+                ChronoUnit(UnitTypeId.STALKER, UnitTypeId.GATEWAY),
+                skip=UnitExists(UnitTypeId.STALKER, 3, include_killed=False),
+                # skip_until=UnitReady(UnitTypeId.PYLON),
+            ),
+            
             ChronoAnyTech(0),
         ]
 

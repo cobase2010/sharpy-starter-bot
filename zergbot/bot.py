@@ -10,26 +10,26 @@ from sharpy.plans.zerg import *
 
 
 class ZergBot(SkeletonBot):
-    cache: UnitCacheManager
-    zone_manager: ZoneManager
+    # cache: UnitCacheManager
+    # zone_manager: ZoneManager
 
     def __init__(self):
         self.attack_started = False
         super().__init__("Zerg Template")
 
     def configure_managers(self) -> Optional[List[ManagerBase]]:
-        self.cache = UnitCacheManager()
-        self.zone_manager = ZoneManager()
+        # self.cache = UnitCacheManager()
+        # self.zone_manager = ZoneManager()
         return [
             MemoryManager(),
             PreviousUnitsManager(),
             LostUnitsManager(),
             EnemyUnitsManager(),
-            self.cache,
+            UnitCacheManager(),
             UnitValue(),
             UnitRoleManager(),
             PathingManager(),
-            self.zone_manager,
+            ZoneManager(),
             BuildingSolver(),
             IncomeCalculator(),
             CooldownManager(),
@@ -54,9 +54,9 @@ class ZergBot(SkeletonBot):
 
     async def execute(self):
         # Your custom logic here
-        if not self.attack_started and len(self.cache.own(UnitTypeId.ZERGLING)) > 5:
+        if not self.attack_started and len(self.knowledge.unit_cache.own(UnitTypeId.ZERGLING)) > 5:
             self.attack_started = True
         if self.attack_started:
             for ling in self.cache.own(UnitTypeId.ZERGLING):
-                ling.attack(self.zone_manager.enemy_start_location)
+                ling.attack(self.knowledge.zone_manager.enemy_start_location)
 
