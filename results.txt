@@ -390,3 +390,7 @@ protossbot  tempest   (2)LostandFoundLE  Defeat
 protossbot  lurker   CeruleanFallLE  Victory
 protossbot  hydra   (2)RedshiftLE  Victory
 protossbot  macro   AbyssalReefLE  Victory
+protossbot  stalker   BlueshiftLE  Victory
+protossbot  randomterran   NewRepugnancyLE  Victory
+protossbot  banshee   CyberForestLE  Victory
+protossbot  mutalisk   CyberForestLE  Victory

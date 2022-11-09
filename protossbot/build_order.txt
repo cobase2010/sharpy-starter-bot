@@ -1,0 +1,79 @@
+
+dt_rush:
+\2022-11-09 11:49:41.293 | 00:12   25ms   70M    0G  13/ 15U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:49:42.113 | 00:14   24ms    0M    0G  14/ 15U [GridBuilding] UnitTypeId.PYLON is building.
+2022-11-09 11:49:45.286 | 00:24   20ms   75M    0G  14/ 15U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:49:49.525 | 00:37   23ms  220M    0G  15/ 23U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:49:49.599 | 00:37   23ms  145M    0G  16/ 23U [BuildGas] Building ASSIMILATOR to (136.5, 147.5)
+2022-11-09 11:49:49.600 | 00:37   23ms  145M    0G  16/ 23U [ChronoUnit] Chrono NEXUSTRAIN_PROBE
+2022-11-09 11:49:49.765 | 00:38   22ms    0M    0G  16/ 23U [GridBuilding] UnitTypeId.GATEWAY is building.
+2022-11-09 11:49:51.759 | 00:43   23ms    0M    0G  16/ 23U [BuildGas] Building ASSIMILATOR to (147.5, 137.5)
+2022-11-09 11:49:53.094 | 00:47   28ms    0M    0G  16/ 23U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:49:56.082 | 00:55   25ms   75M    0G  17/ 23U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:49:59.111 | 01:03   21ms  200M    0G  18/ 23U [ChronoUnit] Chrono NEXUSTRAIN_PROBE
+2022-11-09 11:49:59.880 | 01:05   35ms  185M    0G  18/ 23U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:50:03.070 | 01:13   29ms  235M   28G  19/ 23U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:50:06.197 | 01:22   29ms  300M   56G  20/ 23U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:50:06.290 | 01:22   31ms  205M   56G  21/ 23U [GridBuilding] UnitTypeId.PYLON is building.
+2022-11-09 11:50:06.382 | 01:22   40ms   55M   56G  21/ 23U [GridBuilding] UnitTypeId.GATEWAY is building.
+2022-11-09 11:50:09.524 | 01:29   37ms    0M   88G  21/ 23U [GridBuilding] UnitTypeId.CYBERNETICSCORE is building.
+2022-11-09 11:50:11.551 | 01:33   45ms    0M  104G  21/ 23U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:50:16.551 | 01:44   43ms   40M  148G  22/ 31U [ProtossUnit] ZEALOT from GATEWAY at (133.5, 127.5)
+2022-11-09 11:50:17.266 | 01:46   40ms   15M  156G  24/ 31U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:50:23.013 | 01:58   41ms  155M  220G  25/ 31U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:50:27.374 | 02:07   41ms  290M  268G  26/ 31U [Tech] Started WARPGATERESEARCH
+2022-11-09 11:50:27.378 | 02:07   41ms   90M  118G  26/ 31U [GridBuilding] UnitTypeId.TWILIGHTCOUNCIL is building.
+2022-11-09 11:50:27.674 | 02:07   44ms   95M  118G  26/ 31U [ChronoAnyTech] Chrono RESEARCH_WARPGATE
+2022-11-09 11:50:29.823 | 02:11   44ms    0M  142G  26/ 31U [GridBuilding] UnitTypeId.GATEWAY is building.
+2022-11-09 11:50:32.123 | 02:16   43ms   75M  166G  26/ 31U [GridBuilding] UnitTypeId.GATEWAY is building.
+2022-11-09 11:50:33.098 | 02:17   37ms    0M  174G  26/ 31U [AutoPylon] UnitTypeId.PYLON is building.
+2022-11-09 11:50:36.672 | 02:25   43ms    0M  164G  26/ 31U [ProtossUnit] STALKER from GATEWAY at (133.5, 127.5)
+2022-11-09 11:50:40.566 | 02:33   35ms    5M  154G  28/ 31U [ProtossUnit] STALKER from GATEWAY at (130.5, 125.5)
+2022-11-09 11:50:48.091 | 02:48   43ms  115M   84G  30/ 39U [GridBuilding] UnitTypeId.DARKSHRINE is building.
+2022-11-09 11:50:54.291 | 03:00   43ms  315M  152G  30/ 39U [Tech] Started BLINKTECH
+2022-11-09 11:50:58.744 | 03:08   50ms  185M    0G  30/ 39U [ProtossUnit] STALKER from GATEWAY at (126.5, 138.5)
+2022-11-09 11:50:58.852 | 03:08   50ms   85M    4G  32/ 39U [AutoPylon] UnitTypeId.PYLON is building.
+2022-11-09 11:50:58.855 | 03:08   50ms   85M    4G  32/ 39U [PlanZoneAttack] Attack started at 6.00 power.
+2022-11-09 11:50:59.675 | 03:10   42ms  125M   12G  32/ 39U [ChronoUnit] Chrono GATEWAYTRAIN_STALKER
+2022-11-09 11:50:59.675 | 03:10   42ms  125M   12G  32/ 39U [ChronoAnyTech] Chrono RESEARCH_BLINK
+2022-11-09 11:51:03.572 | 03:17   47ms  115M    2G  32/ 39U [ProtossUnit] STALKER from GATEWAY at (133.5, 127.5)
+2022-11-09 11:51:08.327 | 03:26   46ms  125M    0G  34/ 39U [ProtossUnit] STALKER from GATEWAY at (130.5, 125.5)
+2022-11-09 11:51:22.515 | 03:49   58ms  400M   70G  34/ 47U [PlanZoneAttack] Retreat started at 1.66 own local power against 3.56 enemy local power.
+2022-11-09 11:51:30.875 | 04:01   55ms  500M   34G  33/ 47U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:51:36.511 | 04:09   63ms  425M   32G  38/ 47U [PlanZoneAttack] Retreat stopped.
+2022-11-09 11:51:39.383 | 04:13   60ms  490M   56G  38/ 47U [ChronoAnyTech] Chrono RESEARCH_BLINK
+2022-11-09 11:51:42.685 | 04:18   50ms  375M   80G  40/ 47U [AutoPylon] UnitTypeId.PYLON is building.
+2022-11-09 11:52:07.186 | 04:48   78ms  350M  115G  48/ 55U [AutoPylon] UnitTypeId.PYLON is building.
+2022-11-09 11:52:09.908 | 04:51   60ms  400M  131G  48/ 55U [Tech] Started CHARGE
+2022-11-09 11:52:10.244 | 04:52   71ms  305M   35G  48/ 55U [PlanZoneAttack] Power 24.00 is larger than required attack power 20.00 -> attack!
+2022-11-09 11:52:10.244 | 04:52   71ms  305M   35G  48/ 55U [PlanZoneAttack] Attack started at 24.00 power.
+2022-11-09 11:52:35.707 | 05:16   76ms  405M   42G  46/ 63U [PlanZoneAttack] Retreat started at 11.55 own local power against 24.13 enemy local power.
+2022-11-09 11:52:36.414 | 05:17   84ms  410M   50G  44/ 63U [ChronoAnyTech] Chrono RESEARCH_CHARGE
+2022-11-09 11:52:55.254 | 05:37   71ms  555M  154G  36/ 63U [PlanZoneAttack] Retreat stopped.
+2022-11-09 11:53:22.307 | 06:07   61ms  350M   14G  34/ 47U [GridBuilding] UnitTypeId.GATEWAY is building.
+2022-11-09 11:53:29.662 | 06:15   56ms  490M   62G  34/ 47U [Expand] Expanding to (141.5, 112.5)
+2022-11-09 11:53:29.813 | 06:15   63ms   45M   62G  34/ 47U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:53:34.024 | 06:21   51ms  125M   94G  35/ 47U [ChronoAnyTech] Chrono RESEARCH_CHARGE
+2022-11-09 11:53:34.998 | 06:22   64ms    5M    2G  35/ 47U [GridBuilding] UnitTypeId.ROBOTICSFACILITY is building.
+2022-11-09 11:53:39.167 | 06:28   60ms   30M   34G  35/ 47U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:53:48.143 | 06:40   49ms   60M   48G  38/ 47U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:53:57.950 | 06:52   67ms  105M   66G  39/ 47U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:54:08.951 | 07:05   79ms  150M   84G  38/ 47U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:54:09.093 | 07:05   64ms   55M   84G  39/ 47U [AutoPylon] UnitTypeId.PYLON is building.
+2022-11-09 11:54:20.011 | 07:19   64ms    0M   64G  43/ 47U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:54:25.374 | 07:27   63ms    0M    4G  46/ 47U [AutoPylon] UnitTypeId.PYLON is building.
+2022-11-09 11:54:28.740 | 07:31  151ms   25M   28G  46/ 55U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:54:32.333 | 07:36   57ms   30M   52G  47/ 70U [ActUnit] PROBE from NEXUS at (141.5, 112.5)
+2022-11-09 11:54:38.680 | 07:46   50ms    5M   58G  50/ 70U [ActUnit] PROBE from NEXUS at (140.5, 140.5)
+2022-11-09 11:54:50.973 | 08:04   58ms    5M   54G  55/ 78U [GridBuilding] UnitTypeId.GATEWAY is building.
+2022-11-09 11:54:58.451 | 08:15   71ms    0M   68G  57/ 78U [GridBuilding] UnitTypeId.GATEWAY is building.
+2022-11-09 11:55:00.794 | 08:18   52ms   10M   84G  57/ 78U [BuildGas] Building ASSIMILATOR to (143.5, 105.5)
+2022-11-09 11:55:03.235 | 08:22   56ms   95M  100G  57/ 78U [BuildGas] Building ASSIMILATOR to (143.5, 119.5)
+2022-11-09 11:55:07.993 | 08:28   61ms    0M   40G  61/ 78U [PlanZoneAttack] Power 24.60 is larger than required attack power 20.00 -> attack!
+2022-11-09 11:55:07.994 | 08:28   61ms    0M   40G  61/ 78U [PlanZoneAttack] Attack started at 24.60 power.
+2022-11-09 11:55:17.336 | 08:39   69ms    0M   46G  63/ 78U [GridBuilding] UnitTypeId.GATEWAY is building.
+2022-11-09 11:55:21.797 | 08:44   64ms  105M    3G  63/ 78U [ProtossUnit] OBSERVER from ROBOTICSFACILITY at (134.5, 135.5)
+2022-11-09 11:55:27.970 | 08:52   55ms  160M   39G  64/ 78U [AutoPylon] UnitTypeId.PYLON is building.
+2022-11-09 11:55:38.092 | 09:03   68ms  250M  131G  68/ 78U [EnemyArmyPredicter] Predicting negative free minerals for enemy: -210
+2022-11-09 11:55:40.580 | 09:06   72ms   70M  155G  68/ 78U [ProtossUnit] WARPPRISM from ROBOTICSFACILITY at (134.5, 135.5)
+2022-11-09 11:55:41.904 | 09:07   65ms    0M  167G  70/ 78U [AutoPylon] UnitTypeId.PYLON is building.
