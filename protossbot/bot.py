@@ -284,6 +284,8 @@ class ProtossBot(KnowledgeBot):
                 ProtossUnit(UnitTypeId.ZEALOT, 1),
                 TechReady(UpgradeId.WARPGATERESEARCH, 1),
             ),
+            Step(None, ProtossUnit(UnitTypeId.SENTRY, 1), skip_until=UnitExists(UnitTypeId.STALKER, 3)),
+            Step(None, ProtossUnit(UnitTypeId.OBSERVER, 1), skip_until=UnitExists(UnitTypeId.STALKER, 3)),
             Step(None, ProtossUnit(UnitTypeId.STALKER), None),
         ]
         build_steps_units2 = [
@@ -332,6 +334,10 @@ class ProtossBot(KnowledgeBot):
             RestorePower(),
             DistributeWorkers(),
             Step(None, SpeedMining(), lambda ai: ai.client.game_step > 5),
+            # Detects enemy units as hallucinations
+            PlanHallucination(),
+            # Scouts with phoenixes
+            HallucinatedPhoenixScout(time_interval=60),
             DarkTemplarAttack(),
             PlanZoneGather(),
             attack,
