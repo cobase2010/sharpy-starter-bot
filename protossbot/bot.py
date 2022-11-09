@@ -16,7 +16,7 @@ from sharpy.combat.group_combat_manager import GroupCombatManager
 from sharpy.managers.core import *
 from sharpy.managers.core import ActManager, GatherPointSolver
 from sharpy.managers.core import EnemyUnitsManager
-from sharpy.managers.extensions import MemoryManager
+from sharpy.managers.extensions import MemoryManager, BuildDetector
 from sharpy.plans.acts import *
 from sharpy.plans.acts.protoss import *
 from sharpy.plans.require import *
@@ -70,6 +70,7 @@ class ProtossBot(KnowledgeBot):
             CooldownManager(),
             GroupCombatManager(),
             GatherPointSolver(),
+            BuildDetector(),
         ]
 
     async def create_plan(self) -> BuildOrder:
@@ -235,6 +236,19 @@ class ProtossBot(KnowledgeBot):
              PlanZoneAttack(),
              PlanFinishEnemy(),
          )
+    def intel(self) -> list:
+        result = []
+        flag = False
+        result.append(self.knowledge.get_manager(BuildDetector).macro_build)
+        for enemy in self.all_enemy_units:
+            if enemy.is_detector:
+                result.append("detector")
+                flag = True
+                break
+        result.append("no detector")
+
+        print("Intel:", result, "based on ", len(self.all_enemy_units), " units.")
+        return flag
 
     def dt_rush_build(self) -> BuildOrder:
         self.building_solver.wall_type = 2  # WallType.ProtossMainZerg
@@ -242,9 +256,12 @@ class ProtossBot(KnowledgeBot):
         build_steps_buildings2 = [
             Step(UnitReady(UnitTypeId.GATEWAY, 1), GridBuilding(UnitTypeId.CYBERNETICSCORE, 1)),
             Step(UnitReady(UnitTypeId.CYBERNETICSCORE, 1), GridBuilding(UnitTypeId.TWILIGHTCOUNCIL, 1)),
+            # Step(RequireCustom(lambda k: self.intel()), None),
             Step(UnitReady(UnitTypeId.TWILIGHTCOUNCIL, 1), GridBuilding(UnitTypeId.DARKSHRINE, 1)),
             Tech(UpgradeId.BLINKTECH),
             Tech(UpgradeId.CHARGE),
+            Step(TechReady(UpgradeId.CHARGE, 1), GridBuilding(UnitTypeId.ROBOTICSFACILITY, 1)),
+            Tech(UpgradeId.PROTOSSGROUNDWEAPONSLEVEL1),
         ]
 
         build_steps_workers = [
@@ -285,7 +302,9 @@ class ProtossBot(KnowledgeBot):
                 TechReady(UpgradeId.WARPGATERESEARCH, 1),
             ),
             Step(None, ProtossUnit(UnitTypeId.SENTRY, 1), skip_until=UnitExists(UnitTypeId.STALKER, 3)),
-            Step(None, ProtossUnit(UnitTypeId.OBSERVER, 1), skip_until=UnitExists(UnitTypeId.STALKER, 3)),
+            Step(UnitExists(UnitTypeId.ROBOTICSFACILITY), ProtossUnit(UnitTypeId.OBSERVER, 1), skip_until=UnitExists(UnitTypeId.STALKER, 10)),
+            Step(UnitExists(UnitTypeId.ROBOTICSFACILITY), ProtossUnit(UnitTypeId.WARPPRISM, 1), skip_until=UnitExists(UnitTypeId.STALKER, 10)),
+            Step(None, ProtossUnit(UnitTypeId.IMMORTAL, 4), skip_until=UnitExists(UnitTypeId.STALKER, 15)),
             Step(None, ProtossUnit(UnitTypeId.STALKER), None),
         ]
         build_steps_units2 = [
@@ -325,17 +344,22 @@ class ProtossBot(KnowledgeBot):
             ]
         )
 
+        # attack = PlanZoneAttack(20)
         attack = PlanZoneAttack(20)
         attack.retreat_multiplier = 0.5  # All in
 
+        scout = Step(None, WorkerScout(), skip_until=UnitExists(UnitTypeId.GATEWAY, 1))
+
         tactics = [
+            
             PlanCancelBuilding(),
             PlanZoneDefense(),
             RestorePower(),
+            # scout,
             DistributeWorkers(),
             Step(None, SpeedMining(), lambda ai: ai.client.game_step > 5),
             # Detects enemy units as hallucinations
-            PlanHallucination(),
+            # PlanHallucination(),
             # Scouts with phoenixes
             HallucinatedPhoenixScout(time_interval=60),
             DarkTemplarAttack(),
