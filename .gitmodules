@@ -1,4 +1,4 @@
 [submodule "sharpy-sc2"]
 	path = sharpy-sc2
-	url = https://github.com/cobase2010/sharpy-sc2.git
+	url = git@github.com:cobase2010/sharpy-sc2.git
 	ignore = all
