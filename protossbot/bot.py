@@ -355,7 +355,7 @@ class ProtossBot(KnowledgeBot):
             PlanCancelBuilding(),
             PlanZoneDefense(),
             RestorePower(),
-            # scout,
+            scout,
             DistributeWorkers(),
             Step(None, SpeedMining(), lambda ai: ai.client.game_step > 5),
             # Detects enemy units as hallucinations
