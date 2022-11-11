@@ -219,22 +219,22 @@ class ProtossBot(KnowledgeBot):
              DistributeWorkers(),
              RestorePower(),
              # Detects enemy units as hallucinations
-             PlanHallucination(),
+            #  PlanHallucination(),
              # Scouts with phoenixes
              HallucinatedPhoenixScout(time_interval=60),
              # Cancels buildings that are about to go down
              PlanCancelBuilding(),
              # Set worker rally point
-             WorkerRallyPoint(),
+            #  WorkerRallyPoint(),
              Step(None, SpeedMining(), lambda ai: ai.client.game_step > 5),
              # Have the combat units gather in one place
              PlanZoneGather(),
              # Defend
-             PlanWorkerOnlyDefense(),
+            #  PlanWorkerOnlyDefense(),
              PlanZoneDefense(),
              # Attack, these 2 should be last in a sequential list in this order
-            #  Step(UnitExists(UnitTypeId.ARCHON), PlanZoneAttack()),
-             PlanZoneAttack(),
+            #  Step(UnitExists(UnitTypeId.ARCHON, 2), PlanZoneAttack()),
+             PlanZoneAttack(20),
              PlanFinishEnemy(),
          )
     def intel(self) -> list:

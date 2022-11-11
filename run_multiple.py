@@ -13,7 +13,7 @@ definitions: BotDefinitions = BotDefinitions(ladder_bots_path)
 opponents = list(definitions.random_bots.keys())
 opponents = [opp for opp in opponents if opp not in ['protossbot', 'zergbot', 'randomprotoss', 'randomzerg', 'randomterran']]
 opponents.append('ai')
-
+opponents = ['mutalisk', 'banshee', 'robo', 'tempest', 'flexbot', 'tank', 'bc', 'lurker', 'hydra']
 
 for n in range(1,100):
     # subprocess.run(f"python run_custom.py -p1 protossbot -p2 {opponent}".split(" "))
