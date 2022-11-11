@@ -392,6 +392,7 @@ protossbot  hydra   (2)RedshiftLE  Victory
 protossbot  macro   AbyssalReefLE  Victory
 protossbot  stalker   BlueshiftLE  Victory
 protossbot  randomterran   NewRepugnancyLE  Victory
+
 protossbot  banshee   CyberForestLE  Victory
 protossbot  mutalisk   CyberForestLE  Victory
 protossbot  mutalisk   CeruleanFallLE  Defeat
@@ -442,3 +443,10 @@ protossbot  hydra   BlueshiftLE  Defeat
 protossbot  mutalisk   AbyssalReefLE  Victory
 protossbot  lurker   PortAleksanderLE  Victory
 protossbot  tank   (2)RedshiftLE  Defeat
+protossbot  200roach   AbyssalReefLE  Defeat
+protossbot  voidray   AbyssalReefLE  Defeat
+protossbot  tempest   AbyssalReefLE  Victory
+protossbot  robo   AbyssalReefLE  Defeat
+protossbot  bc   AbyssalReefLE  Defeat
+protossbot  bio   AbyssalReefLE  Victory
+protossbot  banshee   AbyssalReefLE  Defeat
