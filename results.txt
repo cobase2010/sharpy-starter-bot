@@ -450,3 +450,42 @@ protossbot  robo   AbyssalReefLE  Defeat
 protossbot  bc   AbyssalReefLE  Defeat
 protossbot  bio   AbyssalReefLE  Victory
 protossbot  banshee   AbyssalReefLE  Defeat
+protossbot  bc   AbyssalReefLE  Defeat
+protossbot  voidray   AbyssalReefLE  Defeat
+protossbot  robo   AbyssalReefLE  Defeat
+protossbot  bio   AbyssalReefLE  Defeat
+protossbot  200roach   AbyssalReefLE  Defeat
+protossbot  voidray   AbyssalReefLE  Defeat
+protossbot  tempest   PortAleksanderLE  Victory
+protossbot  hydra   NewRepugnancyLE  Victory
+protossbot  robo   (2)LostandFoundLE  Defeat
+protossbot  banshee   (2)RedshiftLE  Defeat
+protossbot  banshee   NewRepugnancyLE  Defeat
+protossbot  bc   PortAleksanderLE  Defeat
+
+=============starting robo build=============
+protossbot  adept   (2)LostandFoundLE  Defeat
+protossbot  workerrush   (2)DreamcatcherLE  Defeat
+protossbot  marine   CyberForestLE  Defeat
+protossbot  terranturtle   CyberForestLE  Victory
+protossbot  lingflood   AbyssalReefLE  Victory
+protossbot  zealot   KingsCoveLE  Victory
+protossbot  mutalisk   KingsCoveLE  Defeat
+protossbot  cyclone   AutomatonLE  Victory
+protossbot  ai   AcolyteLE  Victory
+protossbot  cannonrush   CyberForestLE  Defeat
+protossbot  cyclone   (2)RedshiftLE  Victory
+protossbot  adept   AutomatonLE  Victory
+protossbot  lings   (2)LostandFoundLE  Defeat
+protossbot  dt   BlueshiftLE  Victory
+protossbot  dt   CeruleanFallLE  Victory
+protossbot  saferaven   ParaSiteLE  Victory
+protossbot  saferaven   AcolyteLE  Victory
+protossbot  tempest   NewRepugnancyLE  Tie
+protossbot  bio   CyberForestLE  Victory
+protossbot  banshee   CeruleanFallLE  Defeat
+protossbot  stalker   AbyssalReefLE  Defeat
+protossbot  oldrusty   ParaSiteLE  Victory
+protossbot  banshee   KairosJunctionLE  Defeat
+
+================robo on kaggle
